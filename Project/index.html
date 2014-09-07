@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Music Artists</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Temata za bootstrap e darkly http://bootswatch.com/darkly/ -->
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+</head>
+<body ng-app="vladimir" ng-controller="PageController">
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#/home" class="navbar-brand">Music Artists</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#/add-artist">Add artist</a>
+                </li>
+                <li>
+                 <a href="#/all-artists"></a>
+                </li>
+                <li>
+                    <a href="#/all-albums"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+    </div>
+
+
+<footer class="text-center">
+
+    <div> Author: {{ author }}</div>
+    <div> Date: {{ date.year }}/{{ date.month }}/{{ date.day }}</div>
+    </div>
+
+</footer>
+
+<script src="lib/jquery.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/angular/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers/PageController.js"></script>
+
+</body>
+</html>
